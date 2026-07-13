@@ -2,11 +2,11 @@ import Link from "next/link";
 import { EightyTwoBadge } from "@/components/ui/EightyTwoBadge";
 
 const NAV_LINKS = [
-  { label: "About", href: "#story" },
-  { label: "Stack", href: "#stack" },
-  { label: "Work", href: "#work" },
-  { label: "Services", href: "#services" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/about" },
+  { label: "Stack", href: "/stack" },
+  { label: "Work", href: "/#work" },
+  { label: "Services", href: "/services" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export function Navbar() {
@@ -24,12 +24,12 @@ export function Navbar() {
       <ul className="hidden md:flex gap-8 list-none">
         {NAV_LINKS.map(({ label, href }) => (
           <li key={href}>
-            <a
+            <Link
               href={href}
               className="text-[10px] font-light tracking-[0.14em] uppercase text-muted no-underline transition-colors duration-200 hover:text-white"
             >
               {label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

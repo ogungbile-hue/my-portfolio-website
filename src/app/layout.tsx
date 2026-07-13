@@ -7,6 +7,7 @@ import { Footer } from "@/components/layout/Footer";
 import { CustomCursor } from "@/components/ui/CustomCursor";
 import { GridBackground } from "@/components/ui/GridBackground";
 import { Watermark } from "@/components/ui/Watermark";
+import { Preloader } from "@/components/ui/Preloader";
 
 export const metadata: Metadata = {
   title: {
@@ -56,6 +57,7 @@ export default function RootLayout({
       className={`${dmSerif.variable} ${dmMono.variable} scroll-smooth`}
     >
       <body suppressHydrationWarning className="min-h-screen bg-black text-white font-mono overflow-x-hidden antialiased">
+        <Preloader />
         {/* Global ambient elements */}
         <CustomCursor />
         <GridBackground />

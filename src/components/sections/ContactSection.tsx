@@ -26,21 +26,17 @@ export function ContactSection() {
       </RevealOnScroll>
 
       <RevealOnScroll className="contact-channels" delay={0.4}>
-        <a href="#" className="channel">
+        <a href="mailto:hello@eightytwo.dev" className="channel">
           <span className="ch-label">Email</span>
-          <span className="ch-val">hello@eightytwo.dev</span>
+          <span className="ch-val">Send an Inquiry <span style={{ color: "var(--copper)" }}>→</span></span>
         </a>
-        <a href="#" className="channel">
-          <span className="ch-label">LinkedIn</span>
-          <span className="ch-val">linkedin.com/in/eightytwo</span>
+        <a href="https://linkedin.com/in/eightytwo" className="channel" target="_blank" rel="noreferrer">
+          <span className="ch-label">Network</span>
+          <span className="ch-val">Connect on LinkedIn <span style={{ color: "var(--copper)" }}>↗</span></span>
         </a>
-        <a href="#" className="channel">
-          <span className="ch-label">GitHub</span>
-          <span className="ch-val">github.com/eightytwo</span>
-        </a>
-        <a href="#" className="channel">
-          <span className="ch-label">Twitter / X</span>
-          <span className="ch-val">@eightytwo_dev</span>
+        <a href="https://github.com/eightytwo" className="channel" target="_blank" rel="noreferrer">
+          <span className="ch-label">Code</span>
+          <span className="ch-val">Explore GitHub Profile <span style={{ color: "var(--copper)" }}>↗</span></span>
         </a>
       </RevealOnScroll>
     </section>

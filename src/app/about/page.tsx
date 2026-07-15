@@ -86,8 +86,8 @@ export default function AboutPage() {
                 className="flex flex-col gap-1 group no-underline"
               >
                 <span className="text-[9px] tracking-[0.16em] uppercase text-muted">Email</span>
-                <span className="text-[12px] font-light tracking-[0.04em] text-white transition-opacity group-hover:opacity-70">
-                  hello@eightytwo.dev
+                <span className="text-[12px] font-light tracking-[0.04em] text-white transition-opacity group-hover:opacity-70 flex items-center gap-2">
+                  Send an Inquiry <span className="text-copper">→</span>
                 </span>
               </a>
               <a
@@ -97,8 +97,8 @@ export default function AboutPage() {
                 className="flex flex-col gap-1 group no-underline"
               >
                 <span className="text-[9px] tracking-[0.16em] uppercase text-muted">LinkedIn</span>
-                <span className="text-[12px] font-light tracking-[0.04em] text-white transition-opacity group-hover:opacity-70">
-                  linkedin.com/in/eightytwo
+                <span className="text-[12px] font-light tracking-[0.04em] text-white transition-opacity group-hover:opacity-70 flex items-center gap-2">
+                  Connect on LinkedIn <span className="text-copper">↗</span>
                 </span>
               </a>
               <a
@@ -108,8 +108,8 @@ export default function AboutPage() {
                 className="flex flex-col gap-1 group no-underline"
               >
                 <span className="text-[9px] tracking-[0.16em] uppercase text-muted">GitHub</span>
-                <span className="text-[12px] font-light tracking-[0.04em] text-white transition-opacity group-hover:opacity-70">
-                  github.com/eightytwo
+                <span className="text-[12px] font-light tracking-[0.04em] text-white transition-opacity group-hover:opacity-70 flex items-center gap-2">
+                  Explore GitHub Profile <span className="text-copper">↗</span>
                 </span>
               </a>
             </div>

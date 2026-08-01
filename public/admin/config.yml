@@ -1,0 +1,33 @@
+backend:
+  name: github
+  repo: ogungbile-hue/my-portfolio-website
+  branch: main
+
+# Enable local development backend when running decap-server locally
+local_backend: true
+
+media_folder: "public/uploads/projects"
+public_folder: "/uploads/projects"
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    folder: "content/projects"
+    create: true
+    slug: "{{number}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Project Title", name: "title", widget: "string" }
+      - { label: "Project Number (e.g. 001)", name: "number", widget: "string", default: "001" }
+      - { label: "Tagline / Subtitle", name: "tagline", widget: "string", required: false }
+      - { label: "Role", name: "role", widget: "string", required: false }
+      - { label: "Short Description", name: "description", widget: "text" }
+      - { label: "Featured Flagship Project", name: "featured", widget: "boolean", default: false }
+      - { label: "Status", name: "status", widget: "select", options: ["Live", "In progress", "Case study", "Archived"], default: "Live" }
+      - { label: "Display Order", name: "order", widget: "number", value_type: "int", default: 1 }
+      - { label: "Tech Stack Tags", name: "stack", widget: "list", default: ["React", "TypeScript"] }
+      - { label: "Live Link", name: "link", widget: "string", required: false }
+      - { label: "GitHub Link", name: "github", widget: "string", required: false }
+      - { label: "Cover Image", name: "image", widget: "image", required: false }
+      - { label: "Detailed Notes / Case Study", name: "body", widget: "markdown", required: false }

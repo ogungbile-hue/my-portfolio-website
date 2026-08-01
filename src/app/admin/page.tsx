@@ -4,6 +4,13 @@ import { useEffect } from "react";
 
 export default function AdminPage() {
   useEffect(() => {
+    // Specify explicit CMS config URL for Decap CMS
+    const configLink = document.createElement("link");
+    configLink.href = "/admin/config.yml";
+    configLink.type = "text/yaml";
+    configLink.rel = "cms-config-url";
+    document.head.appendChild(configLink);
+
     const identityScript = document.createElement("script");
     identityScript.src = "https://identity.netlify.com/v1/netlify-identity-widget.js";
     identityScript.async = true;
@@ -15,6 +22,9 @@ export default function AdminPage() {
     document.head.appendChild(cmsScript);
 
     return () => {
+      if (document.head.contains(configLink)) {
+        document.head.removeChild(configLink);
+      }
       if (document.head.contains(identityScript)) {
         document.head.removeChild(identityScript);
       }

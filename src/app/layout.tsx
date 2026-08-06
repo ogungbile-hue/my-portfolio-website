@@ -54,6 +54,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${dmSerif.variable} ${dmMono.variable} scroll-smooth`}
     >
       <body suppressHydrationWarning className="min-h-screen bg-black text-white font-mono overflow-x-hidden antialiased">

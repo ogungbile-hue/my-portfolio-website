@@ -21,11 +21,12 @@ export default function CVPage() {
           </h1>
           <div className="pt-8">
             <a
-              href="/cv.pdf"
-              download
+              href="https://drive.google.com/file/d/1A6MPrIB_uBmhKnNiu7IRaWrXYs9gbojd/view?usp=drive_link"
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center justify-center border border-faint bg-white/[0.02] text-copper font-mono text-[11px] font-medium tracking-[0.12em] uppercase px-8 py-4 transition-colors hover:border-copper/40 hover:bg-copper/5"
             >
-              [ DOWNLOAD PDF VERSION ]
+              [ VIEW / DOWNLOAD PDF VERSION ]
             </a>
           </div>
         </div>

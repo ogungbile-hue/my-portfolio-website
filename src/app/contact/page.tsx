@@ -41,19 +41,19 @@ export default function ContactPage() {
             </div>
 
             <div className="flex flex-col gap-6 mt-4">
-              <a href="mailto:hello@eightytwo.dev" className="flex flex-col gap-1 group no-underline max-w-max border-b border-faint pb-4">
+              <a href="mailto:ogunpropa@gmail.com" className="flex flex-col gap-1 group no-underline max-w-max border-b border-faint pb-4">
                 <span className="text-[9px] tracking-[0.16em] uppercase text-muted">Email</span>
                 <span className="text-[14px] font-light tracking-[0.04em] text-white transition-opacity group-hover:opacity-70 flex items-center gap-2">
                   Send an Inquiry <span className="text-copper">→</span>
                 </span>
               </a>
-              <a href="https://linkedin.com/in/eightytwo" target="_blank" rel="noreferrer" className="flex flex-col gap-1 group no-underline max-w-max border-b border-faint pb-4">
+              <a href="https://www.linkedin.com/in/preciousogungbile/" target="_blank" rel="noreferrer" className="flex flex-col gap-1 group no-underline max-w-max border-b border-faint pb-4">
                 <span className="text-[9px] tracking-[0.16em] uppercase text-muted">LinkedIn</span>
                 <span className="text-[14px] font-light tracking-[0.04em] text-white transition-opacity group-hover:opacity-70 flex items-center gap-2">
                   Connect on LinkedIn <span className="text-copper">↗</span>
                 </span>
               </a>
-              <a href="https://github.com/eightytwo" target="_blank" rel="noreferrer" className="flex flex-col gap-1 group no-underline max-w-max border-b border-faint pb-4">
+              <a href="https://github.com/ogungbile-hue" target="_blank" rel="noreferrer" className="flex flex-col gap-1 group no-underline max-w-max border-b border-faint pb-4">
                 <span className="text-[9px] tracking-[0.16em] uppercase text-muted">GitHub</span>
                 <span className="text-[14px] font-light tracking-[0.04em] text-white transition-opacity group-hover:opacity-70 flex items-center gap-2">
                   Explore GitHub Profile <span className="text-copper">↗</span>

@@ -65,12 +65,14 @@ export default function AboutPage() {
 
             {/* PRIMARY CALL TO ACTION */}
             <div className="pt-8">
-              <Link
-                href="/cv"
+              <a
+                href="https://drive.google.com/file/d/1A6MPrIB_uBmhKnNiu7IRaWrXYs9gbojd/view?usp=drive_link"
+                target="_blank"
+                rel="noreferrer"
                 className="inline-flex items-center justify-center bg-copper text-black font-mono text-[11px] font-medium tracking-[0.12em] uppercase px-8 py-4 transition-transform hover:-translate-y-0.5"
               >
                 [ VIEW PROFESSIONAL RECORD (CV) ]
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -82,7 +84,7 @@ export default function AboutPage() {
             </h3>
             <div className="flex flex-col gap-6">
               <a
-                href="mailto:hello@eightytwo.dev"
+                href="mailto:ogunpropa@gmail.com"
                 className="flex flex-col gap-1 group no-underline"
               >
                 <span className="text-[9px] tracking-[0.16em] uppercase text-muted">Email</span>
@@ -91,7 +93,7 @@ export default function AboutPage() {
                 </span>
               </a>
               <a
-                href="https://linkedin.com/in/eightytwo"
+                href="https://www.linkedin.com/in/preciousogungbile/"
                 target="_blank"
                 rel="noreferrer"
                 className="flex flex-col gap-1 group no-underline"
@@ -102,7 +104,7 @@ export default function AboutPage() {
                 </span>
               </a>
               <a
-                href="https://github.com/eightytwo"
+                href="https://github.com/ogungbile-hue"
                 target="_blank"
                 rel="noreferrer"
                 className="flex flex-col gap-1 group no-underline"

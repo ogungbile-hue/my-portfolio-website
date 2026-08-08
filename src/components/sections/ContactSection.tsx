@@ -21,20 +21,20 @@ export function ContactSection() {
       </RevealOnScroll>
 
       <RevealOnScroll className="contact-ctas" delay={0.3}>
-        <a href="mailto:hello@eightytwo.dev" className="btn-main">Send me an email</a>
-        <a href="#" className="btn-ghost">View CV →</a>
+        <a href="mailto:ogunpropa@gmail.com" className="btn-main">Send me an email</a>
+        <a href="https://drive.google.com/file/d/1A6MPrIB_uBmhKnNiu7IRaWrXYs9gbojd/view?usp=drive_link" target="_blank" rel="noreferrer" className="btn-ghost">View CV →</a>
       </RevealOnScroll>
 
       <RevealOnScroll className="contact-channels" delay={0.4}>
-        <a href="mailto:hello@eightytwo.dev" className="channel">
+        <a href="mailto:ogunpropa@gmail.com" className="channel">
           <span className="ch-label">Email</span>
           <span className="ch-val">Send an Inquiry <span style={{ color: "var(--copper)" }}>→</span></span>
         </a>
-        <a href="https://linkedin.com/in/eightytwo" className="channel" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/preciousogungbile/" className="channel" target="_blank" rel="noreferrer">
           <span className="ch-label">Network</span>
           <span className="ch-val">Connect on LinkedIn <span style={{ color: "var(--copper)" }}>↗</span></span>
         </a>
-        <a href="https://github.com/eightytwo" className="channel" target="_blank" rel="noreferrer">
+        <a href="https://github.com/ogungbile-hue" className="channel" target="_blank" rel="noreferrer">
           <span className="ch-label">Code</span>
           <span className="ch-val">Explore GitHub Profile <span style={{ color: "var(--copper)" }}>↗</span></span>
         </a>

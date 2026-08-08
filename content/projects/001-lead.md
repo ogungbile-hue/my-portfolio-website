@@ -14,6 +14,6 @@ stack:
   - "React"
   - "TypeScript"
   - "SaaS Architecture"
-link: "https://eightytwo.dev"
+link: "https://nccdb-project.onrender.com/"
 ---
 LEAD aggregates multi-million naira procurement pipelines, structured cost specifications, and material benchmark algorithms into a high-performance, real-time dashboard.

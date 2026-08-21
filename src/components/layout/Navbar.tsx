@@ -9,7 +9,7 @@ import { EightyTwoBadge } from "@/components/ui/EightyTwoBadge";
 const NAV_LINKS = [
   { label: "About", href: "/about" },
   { label: "Stack", href: "/stack" },
-  { label: "Work", href: "/#work" },
+  { label: "Work", href: "/work" },
   { label: "Services", href: "/services" },
   { label: "Contact", href: "/contact" },
 ];

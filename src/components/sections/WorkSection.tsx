@@ -23,28 +23,35 @@ export function WorkSection() {
       {/* Featured Banner Project (e.g. LEAD) */}
       {featuredProject && (
         <RevealOnScroll className="project-featured mb-1" delay={0.1}>
-          <div className="project-featured-visual">
-            <div className="eightytwo-grid-bg"></div>
-            <div className="eightytwo-visual">
-              <div className="eightytwo-tile">
-                <div className="eightytwo-tile-corner tl"></div>
-                <div className="eightytwo-tile-corner tr"></div>
-                <div className="eightytwo-tile-corner bl"></div>
-                <div className="eightytwo-tile-corner br"></div>
-                <div className="eightytwo-el-num">{featuredProject.number}</div>
-                <div className="eightytwo-el-sym">82</div>
-                <div className="eightytwo-el-name">LEAD</div>
-              </div>
-              {featuredProject.tagline && (
-                <div className="eightytwo-tagline">{featuredProject.tagline}</div>
-              )}
-            </div>
+          <div className="project-featured-visual relative overflow-hidden">
+            {featuredProject.image ? (
+              <img 
+                src={featuredProject.image} 
+                alt={featuredProject.title} 
+                className="absolute inset-0 w-full h-full object-cover object-top opacity-80 hover:opacity-100 transition-opacity duration-500" 
+              />
+            ) : (
+              <>
+                <div className="eightytwo-grid-bg"></div>
+                <div className="eightytwo-visual">
+                  <div className="eightytwo-tile">
+                    <div className="eightytwo-tile-corner tl"></div>
+                    <div className="eightytwo-tile-corner tr"></div>
+                    <div className="eightytwo-tile-corner bl"></div>
+                    <div className="eightytwo-tile-corner br"></div>
+                    <div className="eightytwo-el-num">{featuredProject.number}</div>
+                    <div className="eightytwo-el-sym">82</div>
+                    <div className="eightytwo-el-name">LEAD</div>
+                  </div>
+                  {featuredProject.tagline && (
+                    <div className="eightytwo-tagline">{featuredProject.tagline}</div>
+                  )}
+                </div>
+              </>
+            )}
           </div>
           <div className="project-featured-info">
             <div>
-              <div className="proj-tag">
-                Featured Project {featuredProject.role ? `· ${featuredProject.role}` : ""}
-              </div>
               <div className="proj-title">{featuredProject.title}</div>
               <p className="proj-desc">{featuredProject.description}</p>
               
@@ -72,16 +79,28 @@ export function WorkSection() {
               )}
             </div>
 
-            {featuredProject.link && (
-              <a
-                href={featuredProject.link}
-                target={featuredProject.link.startsWith("http") ? "_blank" : "_self"}
-                rel="noreferrer"
-                className="proj-link"
-              >
-                Explore Project
-              </a>
-            )}
+            <div className="flex gap-4 pt-4">
+              {featuredProject.link && (
+                <a
+                  href={featuredProject.link}
+                  target={featuredProject.link.startsWith("http") ? "_blank" : "_self"}
+                  rel="noreferrer"
+                  className="proj-link"
+                >
+                  Explore Project &rarr;
+                </a>
+              )}
+              {featuredProject.github && (
+                <a
+                  href={featuredProject.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="proj-link"
+                >
+                  View Source Code &rarr;
+                </a>
+              )}
+            </div>
           </div>
         </RevealOnScroll>
       )}

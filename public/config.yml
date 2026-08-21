@@ -14,8 +14,7 @@ collections:
     label: "Projects"
     folder: "content/projects"
     create: true
-    slug: "{{number}}-{{title}}"
-    identifier_field: "number"
+    slug: "{{slug}}"
     editor:
       preview: false
     fields:
